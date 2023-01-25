@@ -1,3 +1,4 @@
+
 th{
     text-align: left;
 }
@@ -31,7 +32,6 @@ th{
 .firstR1stC{
     border: 1px solid rgba(231, 230, 230, 0.644);
     background-color: rgba(231, 230, 230, 0.644) ;
-    display: block;
     width: 620px;
     
 }
@@ -94,11 +94,12 @@ th{
     display: inline-block;
     margin-right:5px ;
     width: 620px;
+    height: 45px;
 }
 
 .thirdR{
     border: 1px solid rgba(231, 230, 230, 0.644);
-    background-color: rgba(156, 153, 153, 0.644) ;
+    background-color: rgba(231, 230, 230, 0.644) ;
     display: block;
     width: 620px;
 }
@@ -113,6 +114,7 @@ margin-left: 160px;
     background-color: rgba(156, 153, 153, 0.644) ;
     display: block;
     width: 620px;
+    height: 170px;
 }
 
 .Ftext{
