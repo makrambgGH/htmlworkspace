@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-    <style>
-         th,tr {
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body>
 
@@ -19,12 +15,12 @@
             <tr>
                 <th>
                     <label for="title">Title:* </label><br>
-                    <input type="text" id="title" name="title" placeholder="Astronomy for Poets"><br>
+                    <input type="text" id="title" name="title" value="Astronomy for Poets"><br>
                 </th>
 
                 <th>
                     <label for="shorttitle">short Title:* </label><br>
-                    <input type="shorttext" id="shorttitle" name="shorttitle" placeholder="Astr for Poets"><br>
+                    <input type="shorttext" id="shorttitle" name="shorttitle" value="Astr for Poets"><br>
                 </th>
 
                 <th>
@@ -34,12 +30,12 @@
 
                 <th>
                     <label for="Num">Num:* </label><br>
-                    <input type="Num" id="Num" name="Num" placeholder="10"><br>
+                    <input type="Num" id="Num" name="Num" value="10"><br>
                 </th>
 
                 <th>
                     <label for="Section">Section:* </label><br>
-                    <input type="Section" id="Section" name="Section" placeholder="01"><br>
+                    <input type="Section" id="Section" name="Section" value="01"><br>
                 </th>
 
                 <th>
@@ -56,159 +52,153 @@
 
 
 <div class="INbetween">
-        <table>
-            <tr>
-                <th>
-                    <div class="secondcontainer">
-    
-                        <div class="1stRow">
-                    
-                            <table>
-                                <tr>
-                                    <th>
-                                        <input type="radio" name="limit" id="limit">
-                                        <label for="limit"> Enrollment limit </label>
-                                    </th>
-                                    <th>
-                                        <label for="Num"> Num.: </label> <br>
-                                         <input type="text" name="Num" id="Num">
-                                    </th>
-                                    <th>
-                                        <label for="rationale"> Rationale: </label> <br>
-                                        <input type="text" name="rationale" id="rationale">
-                                    </th>
-                                </tr>
-                            </table>
-                            
-                    
-                    
-                        </div>
-                    
-                        <br>
-                    
-                        <div class="2ndRow">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <input type="radio" name="consent" id="consent">
-                                        <label for="consent"> Consent required </label>
-                                    </th>
-                    
-                                    <th>
-                                        <label for="Rationale"> Rationale: </label>
-                                        <input type="text" name="Rationale" id="Rationale">
-                                    </th>
-                                </tr>
-                            </table>
-                    
-                        </div>
-                    
-                        <br>
-                    
-                        <div class="3rdRow">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <input type="radio" name="limit class level" id="limit class level">
-                                        <label for="limit class level"> limit class level </label>
-                                    </th>
-                    
-                                    <th>
-                                        <label for="code"> Code: </label><br>
-                                        <input type="text" name="code" id="code">
-                                    </th>
-                    
-                                    <th>
-                                        <label for="Rationale"> Rationale: </label><br>
-                                        <input type="text" name="Rationale" id="Rationale"> <br>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th>
-                                        <label for="Enrollment"> How to handle over-enrollment: </label><br>
-                                        <input type="text" name="Enrollment" id="Enrollment">
-                                    </th>
-                                </tr>
-                            </table>
-                    
-                        </div>
-                    
-                        <br>
-                    
-                        <div class="4thRow">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <input type="radio" name="Prerequisite" id="Prerequisite">
-                                        <label for="Prerequisite"> Prerequisite </label>
-                                    </th>
-                                    <th>
-                                        <label for="Rationale"> Rationale: </label><br>
-                                        <input type="text" name="Rationale" id="Rationale"> 
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <th>
-                                        <label for="RequiredP"> Required Prereqs.(major, course): </label><br>
-                                        <input type="text" name="RequiredP" id="RequiredP"> 
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <th>
-                                        <label for="RecommendedP"> Recommended Prereqs.: </label><br>
-                                        <input type="text" name="RecommendedP" id="RecommendedP"> 
-                                    </th>
-                                </tr>
-                            </table>
-                    
-                        </div>
-                    
+        <table class="table_main">
+            <tr class="firstR">
+                <th class="firstR1stC">
+                    <div class="one">
+                        <input type="radio" name="limit" id="limit">
+                        <label for="limit"> Enrollment limit </label>
+                    </div>
+
+                    <div class="tow">
+                        <label for="Num"> Num.: </label> <br>
+                        <input type="text" name="Num" id="Num">
+                    </div>
+
+                    <div class="tow">
+                        <label for="rationale"> Rationale: </label> <br>
+                        <input type="text" name="rationale" id="rationale">
+                    </div>
+
+
                 </th>
 
-                <th>
-                    <p>Class</p><br>
+               <th rowspan="4" class="secondcolomn">
+                   <p>Class</p><br>
                     <label for="Meetings/Week">Meetings/Week :</label><br>
                     <input type="number"><br>
                     <label for="Class Hours/Week">Class Hours/Week :</label><br>
-                    <input type="number"><br>
+                   <input type="number"><br>
                     <label for="Semester(s) Offered">Semester(s) Offered :</label><br>
-                    <input type="number"><br>
-
-                    <input type="checkbox" id="check" name="check" value="check">
+                   <input type="number"><br>
+                   <input type="checkbox" id="check" name="check" value="check">
                     <label for="check">Inel. senester in prereqs. </label><br>
                     <input type="checkbox" id="check" name="check" value="check">
                     <label for="check">Offered only once </label><br>
                     <input type="checkbox" id="check" name="check" value="check">
                     <label for="check">Incl. in Printed catalog </label><br>
-
-
+                        
                 </th>
 
-                <th>
+                    <th rowspan="4" class="thirdcolomn">
+
                     <p>Keywords:</p>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Science for non-majors </label><br>
+                    <label for="check">Science for non-majors </label><br><br>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Fine arts for non-majors </label><br>
+                    <label for="check">Fine arts for non-majors </label><br><br>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Lab science course </label><br>
+                    <label for="check">Lab science course </label><br><br>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Artistic practice </label><br>
+                    <label for="check">Artistic practice </label><br><br>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Foreign language / taught in English </label><br>
+                    <label for="check">Foreign language / taught in English </label><br><br>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Community based learning </label><br>
+                    <label for="check">Community based learning </label><br><br>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Writing attentive </label><br>
+                    <label for="check">Writing attentive </label><br><br>
                     <input type="checkbox" id="check" name="check" value="check">
-                    <label for="check">Writing intensive </label><br>
-                </th>
+                    <label for="check">Writing intensive </label><br><br>
+
+                    </th>
+                </tr>
+
+
+                 <tr  class="secondR">
+
+                    <th>
+                        <div class="one">
+                            <input type="radio" name="consent" id="consent">
+                            <label for="consent"> Consent required </label>   
+                        </div>
+
+                        <div class="tow">
+                            <label for="Rationale"> Rationale: </label><br>
+                            <input type="text" name="Rationale1" id="Rationale1">
+                        </div>
+                    </th>
+
+             
+
+                </tr>
+                            
+
+                <tr class="thirdR">
+                    <th>
+                        <div class="one">
+                            <input type="radio" name="limit class level" id="limit class level">
+                            <label for="limit class level"> limit class level </label>
+                        </div>
+    
+                        <div class="tow">
+                            <label for="code"> Code: </label><br>
+                            <input type="text" name="code" id="code" class="code">
+                        </div>
+    
+                        <div class="tow">
+                            <label for="Rationale"> Rationale: </label><br>
+                            <input type="text" name="Rationale" id="Rationale2">
+                        </div>
+
+                        <div class="tow">
+                            <label for="Enrollment" class="Enrollment2"> How to handle over-enrollment: </label><br>
+                            <input type="text" name="Enrollment" class="Enrollment2" id="Enrollment2">
+                        </div>
+
+                    </th>
+                </tr>
+                            
+                                <tr class="fourthR">
+                                    <table>
+                                        <tr>
+                                            <th>
+                                                <input type="radio" name="Prerequisite" id="Prerequisite">
+                                                <label for="Prerequisite"> Prerequisite </label>
+                                            </th>
+                                            <th>
+                                                <label for="Rationale"> Rationale: </label><br>
+                                                <input type="text" name="Rationale" id="Rationale3"> 
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                <label for="RequiredP"> Required Prereqs.(major, course): </label><br>
+                                                <input type="text" name="RequiredP" id="RequiredP"> 
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                <label for="RecommendedP"> Recommended Prereqs.: </label><br>
+                                                <input type="text" name="RecommendedP" id="RecommendedP"> 
+                                            </th>
+                                        </tr>
+                                    </table>
+                                  </tr>
+
             </tr>
-        </table>
+                                    
+        
+                            
+         </table>
+                    
+
+
+                        <br><br><br>
+                    
+                        
+        
 
    
 </div>
@@ -218,11 +208,11 @@
 
 
 
-<div class="3rdContainer">
+
     <table>
         <tr>
-            <th>
-                <p>Approvals</p>
+            <th class="FC">
+                <p style="display: block;">Approvals</p>
                 <input type="checkbox" id="CEP" name="CEP" value="CEP">
                 <label for="CEP">CEP </label><br>
 
@@ -233,19 +223,19 @@
                 <label for="Faculty">Faculty </label><br>
             </th>
 
-            <th>
+            <th class="SC">
                 <p>Date :</p>
-                <input type="text"><br>
-                <input type="text"><br>
-                <input type="text"><br>
+                <input type="text" class="Ftext"><br>
+                <input type="text" class="Ftext"><br>
+                <input type="text" class="Ftext"><br>
                 
             </th>
 
-            <th>
+            <th class="TC">
                 <p>Comment :</p>
-                <input type="text"><br>
-                <input type="text"><br>
-                <input type="text"><br>
+                <input type="text" class="Ltext"><br>
+                <input type="text" class="Ltext"><br>
+                <input type="text"  class="Ltext"><br>
             </th>
         </tr>
     </table>
@@ -253,6 +243,5 @@
 
 </div>
     
-    
 </body>
-</html>
+</html> 

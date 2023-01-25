@@ -1,0 +1,126 @@
+th{
+    text-align: left;
+}
+
+#shorttitle{
+    width: 220px;
+}
+#title{
+    width: 450px;
+}
+#Num{
+    width: 25px;
+}
+#Section{
+    width: 40px;
+}
+
+#code{
+    width: 25px;
+}
+
+.one{
+    display: inline-block;
+    margin-right: 5px;
+}
+.tow {
+    display: inline-block;
+    margin-right: 5px;
+} 
+
+.firstR1stC{
+    border: 1px solid rgba(231, 230, 230, 0.644);
+    background-color: rgba(231, 230, 230, 0.644) ;
+    display: block;
+    width: 620px;
+    
+}
+
+.secondcolomn{
+    border: 1px solid rgba(231, 230, 230, 0.644);
+    background-color: rgba(231, 230, 230, 0.644) ;
+    width: 250px;
+    height: auto;
+}
+
+#rationale{
+    width: 400px;   
+   }
+
+#Rationale1{
+    width: 400px; 
+}
+
+#Rationale2{
+    width: 400px; 
+}
+
+#Enrollment{
+    width: 400px;
+}
+
+#Rationale3{
+    width: 400px; 
+}
+
+#RequiredP{
+    width: 400px;
+}
+
+#RecommendedP{
+    width: 400px;
+}
+
+   .one label {
+    display: block;
+    font-weight: bold;
+}
+
+.tow input {
+    font-size: 15px;
+}
+
+
+.thirdcolomn{
+    border: 1px solid rgba(231, 230, 230, 0.644);
+    background-color: rgba(231, 230, 230, 0.644) ;
+    width: 250px;
+    height: auto;
+}
+
+.secondR{
+    border: 1px solid rgba(231, 230, 230, 0.644);
+    background-color: rgba(156, 153, 153, 0.644) ;
+    display: inline-block;
+    margin-right:5px ;
+    width: 620px;
+}
+
+.thirdR{
+    border: 1px solid rgba(231, 230, 230, 0.644);
+    background-color: rgba(156, 153, 153, 0.644) ;
+    display: block;
+    width: 620px;
+}
+.Enrollment2{
+margin-left: 160px;
+}
+#Enrollment2{
+    width: 400px;
+}
+.fourthR{
+    border: 1px solid rgba(231, 230, 230, 0.644);
+    background-color: rgba(156, 153, 153, 0.644) ;
+    display: block;
+    width: 620px;
+}
+
+.Ftext{
+    width: 150px;
+    background-color: rgba(231, 230, 230, 0.644);
+    margin-right: 10px;
+}
+.Ltext{
+    width: 500px;
+    background-color: rgba(231, 230, 230, 0.644);
+}
