@@ -1,0 +1,34 @@
+
+
+ // 1: Create a function that act as the built in replaceAll function
+
+
+function replaceAll(string,search,replace){
+    return string.split(search).join(replaceAll);
+}
+
+const Main = "We Are Pushing Our Third Assignment in this bootcamp and in each Assignment we're learning alot of skills";
+
+const replacedMessage = replaceAll(Main,"Assignment","Challange");
+console.log(replacedMessage);
+
+
+
+// 2: Create a function that act as the built in concat function
+
+
+function ConcatArray(string){
+
+    let result=" " ,i;
+
+    for (i=0;i<string.length;i++)
+        result += string[i];
+    
+    return result;
+}
+const string1 = "FullStack";
+const string2 = "BootCamp";
+const string3 = "TechLarious";
+result = ConcatArray(string1,string2,string3);
+
+console.log(result);
