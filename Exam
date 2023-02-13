@@ -1,0 +1,192 @@
+//html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="firstContainer">
+        <h2 class="title">Kill The Monster</h2>
+    </div>
+    <div class="monsterHealth">
+        <h4>Monster Health</h4>
+        <div class="MonsterBar">
+            <div id="monsterHealth"></div>
+        </div>
+    </div>
+    <div class="yourHealth">
+        <h4>Your Health</h4>
+        <div class="YourBar">
+            <div id="yourHealth"></div>
+        </div>
+
+    </div>
+
+
+    <div class="buttons">
+        <div>
+          <button onclick="attack()">ATTACK</button>
+          <button onclick="specialAttack()">SPECIAL ATTACK</button>
+        </div>
+        <div>
+          <button onclick="heal()">HEAL</button>
+          <button onclick="giveUp()">GIVE UP</button>
+        </div>
+      </div>
+
+    
+
+    <div class="BattleLog">
+        <div class="container">
+            <h3>Battle Log</h3>
+            <div class="outputs"></div>
+        </div>
+        
+    </div>
+    
+    <div class="GameOver">
+      <div class="container">
+        <h3>Game Over!</h3>
+        <h3 class="message"></h3>
+        <div class="outputs"></div>
+        <button onclick="reset()">New Game</button>
+      </div>
+
+    </div>
+    
+    
+    
+</body>
+</html>
+
+
+
+//CSS
+
+.firstContainer{
+    text-align: center;
+    align-items: center;
+    height: 70px;
+    border: 1px solid transparent;
+    background-color: brown;
+}
+.title{
+    font-weight: bold;
+    color: white;
+}
+.monsterHealth,
+.yourHealth{
+    text-align: center;
+    border: 1px solid rgb(160, 158, 158);
+    width: 500px;
+    padding: 15px; 
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px #ddd, 0 0px 6px #d5d5d5;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    background-color: #88005b;
+    border: 1 solid #88005b;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.Table{
+    margin-left: 550px;
+    justify-content: space-around;
+}
+
+.MonsterBar,
+.YourBar {
+    width: 360px;
+    height: 20px;
+    border: 1 solid black;
+    margin: 20px;
+    background-color: #4caf50;
+
+}
+
+  .lastContainer{
+    text-align: center;
+    border: 2px solid rgb(112, 111, 111);
+    border-radius: 15px;
+    width: 400px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 460px;
+  }
+	
+	/javascript i didn't complete it basically i need some more practice 
+
+let monsterHealth = document.getElementsByClassName("monsterHealth");
+let yourHealth = document.getElementsByClassName("yourHealth");
+let BattleLog = document.getElementsByClassName("BattleLog");
+let GameOver = document.getElementsByClassName("GameOver");
+let message = document.getElementsByClassName("message");
+let outputs = document.getElementsByClassName("outputs");
+let buttons = document.getElementsByClassName("buttons");
+
+
+
+
+
+
+function Attack(){
+  function decreaseHealth(yourHealth, monsterHealth, minHealth, maxHealth) {
+         const yourDecrease = Math.floor(Math.random() * (maxHealth - minHealth + 1) + minHealth);
+        const monsterDecrease = Math.floor(Math.random() * (maxHealth - minHealth + 1) + minHealth);
+      
+          yourHealth -= yourHealth;
+          monsterHealth -= monsterDecrease;
+      
+         return [yourHealth, monsterHealth];
+      }
+ }
+
+ let randomNum = (min, max) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+  };
+  
+ function SpecialAttack(){
+
+ }
+
+ function Heal(){
+
+ }
+
+ function GiveUp(){
+    yourHeath = 0;
+    gameOver("You Give Up!");
+}
