@@ -1,0 +1,78 @@
+.firstContainer{
+    text-align: center;
+    align-items: center;
+    height: 70px;
+    border: 1px solid transparent;
+    background-color: brown;
+}
+.title{
+    font-weight: bold;
+    color: white;
+}
+.monsterHealth,
+.yourHealth{
+    text-align: center;
+    border: 1px solid rgb(160, 158, 158);
+    width: 500px;
+    padding: 15px; 
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px #ddd, 0 0px 6px #d5d5d5;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    background-color: #88005b;
+    border: 1 solid #88005b;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.Table{
+    margin-left: 550px;
+    justify-content: space-around;
+}
+
+.MonsterBar,
+.YourBar {
+    width: 360px;
+    height: 20px;
+    border: 1 solid black;
+    margin: 20px;
+    background-color: #4caf50;
+
+}
+
+  .lastContainer{
+    text-align: center;
+    border: 2px solid rgb(112, 111, 111);
+    border-radius: 15px;
+    width: 400px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 460px;
+  }
